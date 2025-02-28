@@ -1,17 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 export default function App() {
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>A historia de Allan Turing</Text>
       <View style={styles.container}>
         <Text style={styles.subtitle}> Introdução</Text>
         <Text style={styles.text}>
-          Alan Mathison Turing, nasceu em Londres, no dia 23 de junho de 1912,
-          e faleceu em Wilmslow, no dia 7 de junho de 1954. Foi um matemático,
-          lógico, cientista da computação, filósofo, criptoanalista e
-          biólogo teórico britânico. Turing é frequentemente considerado o pai
-          da ciência da computação e da inteligência artificial.
+          Alan Mathison Turing, nasceu em Londres, no dia 23 de junho de 1912, e
+          faleceu em Wilmslow, no dia 7 de junho de 1954. Foi um matemático,
+          lógico, cientista da computação, filósofo, criptoanalista e biólogo
+          teórico britânico. Turing é frequentemente considerado o pai da
+          ciência da computação e da inteligência artificial.
         </Text>
         <Image
           style={styles.imagem}
@@ -21,10 +22,9 @@ export default function App() {
         />
       </View>
       <View style={styles.section}>
-'        <Text style={styles.subtitle}> Vida</Text>
+        ' <Text style={styles.subtitle}> Vida</Text>
+        
       </View>
-
-
 
       <StatusBar style="auto" />
     </View>
@@ -40,8 +40,6 @@ const styles = StyleSheet.create({
   },
   section: {
     marginTop: 20,
-
-
   },
   title: {
     fontSize: 30,
