@@ -1,15 +1,17 @@
 import React from "react";
-import Nav from './components/nav/nav.jsx';
-import Card from './components/card/card.jsx';
-import { View } from "react-native";
-import styles from "./components/style.js";
+import { View, Text } from "react-native";
+import Header from "./components/nav/Header.jsx";
+import Summary from "./components/card/Summary.jsx";
+import styles from "./components/style";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Nav />
-      <Card />
+      <Header />
+      <Summary />
+      <Text style={styles.description}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh lorem ipsum dolor
+      </Text>
     </View>
   );
 }
-

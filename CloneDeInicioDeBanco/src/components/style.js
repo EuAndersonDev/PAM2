@@ -1,92 +1,91 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "#fff",
-      alignItems: "center", // Centraliza horizontalmente
-      padding: 20,
-    },
-    navbar: {
-      width: "100%",
-      padding: 15,
-      flexDirection: "row",
-      justifyContent: "space-between",
-      backgroundColor: "#ff4d4d",
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
-    },
-    navText: {
-      color: "#fff",
-      fontSize: 16,
-    },
-    card: {
-      backgroundColor: "#ff4d4d",
-      padding: 20,
-      borderRadius: 20,
-      alignItems: "center",
-      width: "100%",
-      marginTop: 10, // Espaço entre o Nav e o Card
-    },
-    title: {
-      color: "#fff",
-      fontSize: 18,
-      marginBottom: 5,
-    },
-    balance: {
-      color: "#fff",
-      fontSize: 30,
-      fontWeight: "bold",
-    },
-    buttonContainer: {
-      flexDirection: "row",
-      marginTop: 20,
-    },
-    button: {
-      alignItems: "center",
-      marginHorizontal: 15,
-    },
-    buttonText: {
-      color: "#fff",
-      marginTop: 5,
-    },
-    incomeExpenseContainer: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-      width: "100%",
-      marginTop: 20,
-    },
-    column: {
-      alignItems: "center",
-      flex: 1,
-    },
-    incomeTitle: {
-      color: "black",
-      fontSize: 16,
-      fontWeight: "bold",
-    },
-    expenseTitle: {
-      color: "black",
-      fontSize: 16,
-      fontWeight: "bold",
-    },
-    incomeValue: {
-      fontSize: 24,
-      fontWeight: "bold",
-      color: "black",
-    },
-    expenseValue: {
-      fontSize: 24,
-      fontWeight: "bold",
-      color: "black",
-    },
-    description: {
-      textAlign: "center",
-      marginTop: 10,
-      color: "gray",
-      fontSize: 14,
-      paddingHorizontal: 20,
-    },
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "#fff",
+    paddingTop: 50,
+  },
+  header: {
+    backgroundColor: "#ff416c",
+    width: "100%",
+    padding: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    alignItems: "center",
+  },
+  balanceCard: {
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 10,
+    alignItems: "center",
+    width: "90%",
+    position: "relative",
+  },
+  balanceTitle: {
+    fontSize: 14,
+    color: "#777",
+  },
+  balanceAmount: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "black",
+  },
+  settingsIcon: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+  },
+  navButtons: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "90%",
+    marginTop: 20,
+  },
+  button: {
+    backgroundColor: "white",
+    padding: 15,
+    borderRadius: 10,
+    alignItems: "center",
+    width: 80,
+  },
+  buttonText: {
+    marginTop: 5,
+    fontSize: 12,
+  },
+  summary: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "80%",
+    marginTop: 30,
+  },
+  income: {
+    alignItems: "center",
+  },
+  expenses: {
+    alignItems: "center",
+  
+  },
+  summaryTitle: {
+    fontSize: 14,
+    fontWeight: "bold",
+  },
+  summaryAmount: {
+    fontSize: 22,
+    fontWeight: "bold",
+  },
+  dot: {
+    height: 10,
+    width: 10,
+    borderRadius: 50,
+    marginBottom: 5,
+  },
+  description: {
+    textAlign: "center",
+    color: "gray",
+    fontSize: 12,
+    marginTop: 20,
+    paddingHorizontal: 20,
+  },
 });
-
-export default styles;

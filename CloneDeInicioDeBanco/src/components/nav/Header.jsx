@@ -1,24 +1,26 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import styles from "../style.js";
 import { FontAwesome } from "@expo/vector-icons";
-const Nav = () => {
-  return (
-    <View style={styles.card}>
-      <Text style={styles.title}>Lorem ipsum dolot</Text>
-      <Text style={styles.balance}>$236,678.25</Text>
+import styles from "../style";
 
-      <View style={styles.buttonContainer}>
+export default function Header() {
+  return (
+    <View style={styles.header}>
+      <View style={styles.balanceCard}>
+        <Text style={styles.balanceTitle}>Lorem ipsum dolot</Text>
+        <Text style={styles.balanceAmount}>$236,678.25</Text>
+        <FontAwesome name="cog" size={20} color="black" style={styles.settingsIcon} />
+      </View>
+
+      <View style={styles.navButtons}>
         <TouchableOpacity style={styles.button}>
           <FontAwesome name="search" size={24} color="black" />
           <Text style={styles.buttonText}>Lorem</Text>
         </TouchableOpacity>
-
         <TouchableOpacity style={styles.button}>
           <FontAwesome name="bar-chart" size={24} color="black" />
           <Text style={styles.buttonText}>Ipsum</Text>
         </TouchableOpacity>
-
         <TouchableOpacity style={styles.button}>
           <FontAwesome name="cog" size={24} color="black" />
           <Text style={styles.buttonText}>Dolor</Text>
@@ -26,6 +28,4 @@ const Nav = () => {
       </View>
     </View>
   );
-};
-
-export default Nav;
+}
